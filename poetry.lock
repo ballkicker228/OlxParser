@@ -285,6 +285,17 @@ files = [
 et-xmlfile = "*"
 
 [[package]]
+name = "pyfzf"
+version = "0.3.1"
+description = "Python wrapper for junegunn's fuzzyfinder (fzf)"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pyfzf-0.3.1-py3-none-any.whl", hash = "sha256:736f71563461b75f6f85b55345bdc638fa0dc14c32c857c59e8b1ca1cfa3cf4a"},
+    {file = "pyfzf-0.3.1.tar.gz", hash = "sha256:dd902e34cffeca9c3082f96131593dd20b4b3a9bba5b9dde1b0688e424b46bd2"},
+]
+
+[[package]]
 name = "requests"
 version = "2.31.0"
 description = "Python HTTP for Humans."
@@ -336,4 +347,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "a27b073f49a5bdf6fef810c1a1cff05166e015473894adaed22c2464d2235e8f"
+content-hash = "5e198cf8bc537dc2fca499015bfb56b4faa65baef4b67d548c72c474e2e1c136"

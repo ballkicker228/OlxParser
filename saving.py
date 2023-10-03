@@ -1,10 +1,9 @@
 import openpyxl
+from parser import Announcement
 
 class Saving():
-    def __init__(self, name, price, date):
-        self.name = name
-        self.price = price
-        self.date = date
+    def __init__(self, announcements):
+        self.announcements = announcements
 
     def save(self): #TODO
         pass
