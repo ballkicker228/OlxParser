@@ -7,11 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-bs4 = "^0.0.1"
-requests = "^2.31.0"
 lxml = "^4.9.3"
 openpyxl = "^3.1.2"
 pyfzf = "^0.3.1"
+selenium = "^4.13.0"
 
 
 [build-system]

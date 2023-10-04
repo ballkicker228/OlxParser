@@ -1,9 +1,10 @@
-from parser import Parser
+from parser import Parser, Category
 from saving import Saving
 
 def main():
     parser = Parser()
-    parser.get_html("g", True)
+    category = Category("transport")
+    parser.parse(category)
 
 if __name__ == "__main__":
     main()
