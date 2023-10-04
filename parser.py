@@ -1,7 +1,7 @@
 from selenium import webdriver
 import random
 import time
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 
 class Announcement:
@@ -24,7 +24,7 @@ class Parser:
     def parse(self, category: Category):
         options = Options()
         options.add_argument('--headless')
-        driver = webdriver.Firefox()#options=options) #TODO 
+        driver = webdriver.Firefox(options=options) 
         driver.get(category.category)
         listofannouncementsdriver = driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/div[2]/form/div[5]/div/div[2]')
         announcementslist = listofannouncementsdriver.find_elements(By.CLASS_NAME, "css-1sw7q4x")
