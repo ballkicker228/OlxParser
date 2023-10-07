@@ -3,8 +3,9 @@ from saving import Saving
 
 def main():
     parser = Parser()
-    category = Category("transport")
-    parser.parse(category)
+    category = Category("uslugi")
+    announcementslist = parser.parse(category)
+    parser.close()
 
 if __name__ == "__main__":
     main()
